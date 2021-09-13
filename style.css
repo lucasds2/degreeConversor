@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: linear-gradient(to bottom, #3f4c6b 0%,#3f4c6b 100%);
+}
+
+.container{
+  width: 350px;
+  padding: 60px 50px 60px 50px;
+  animation: opacity 1s forwards;
+  opacity: 0;
+  margin: 100px auto 0px auto;
+  background: linear-gradient(to bottom, #3f4c6b 0%,#3f4c6b 100%);
+  border-radius: 3%;
+  box-shadow: -2px 8px 33px -2px rgba(0,0,0,0.57);
+  -webkit-box-shadow: -2px 8px 33px -2px rgba(0,0,0,0.57);
+  -moz-box-shadow: -2px 8px 33px -2px rgba(0,0,0,0.57);
+}
+
+h3{
+  color: white;
+  text-align: center;
+}
+
+select{
+  margin-bottom: 30px;
+  padding: 5px;
+  outline: 1px;
+}
+
+input{
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 5px;
+  border-color: transparent;
+}
+
+input[type = number]{
+  width: 100%;
+  opacity: 0;
+  animation-name: opacity, translate;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  outline: black solid 3px;
+}
+
+label{
+  color: white;
+  font-weight: 600;
+}
+
+input[type = radio]{
+  margin-top: 20px;
+
+}
+
+input[type = button]{
+  padding: 10px 30px;
+  margin: 40px 0px 0px 20%;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  background: rgb(255, 182, 0);
+  border-radius: 10px;
+  transition: all .8s;
+}
+
+input[type = button]:hover{
+  background: linear-gradient(to bottom, #3f4c6b 0%,#3f4c6b 100%);
+  cursor: pointer;
+  border-color: rgb(255, 182, 0);
+  border-style: solid;
+  transform: scale(1.1);
+  color: white;
+}
+
+#result{
+  color: white;
+  font-size: 16px;
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+#result::selection{
+  background: black;
+}
+
+@keyframes translate{
+  from{
+    transform: translateX(-50%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes opacity{
+  to{
+    opacity: 1;
+  }
+}
+
