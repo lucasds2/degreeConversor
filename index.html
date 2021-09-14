@@ -12,13 +12,13 @@
 <body>
   <div class="container">
     <h3>Celsius to Fahrenheit  Fahrenheit to Celsius</h3>
-    <form>
+    <form action="javascript:void(0);" onsubmit="return conversorCelsiusFahrenheit()">
       <input placeholder="Example: 10" type="number" id="conversor">
-      <input type="radio" name="Grau" id="celsius">
+      <input type="radio" name="Grau" checked id="celsius">
       <label for="celsius">Celsius</label>
       <input type="radio" name="Grau" id="fahrenheit">
       <label for="fahrenheit">Fahrenheit</label>
-      <input type="button" value="CONVERTER" id="btn" onclick="conversorCelsiusFahrenheit()">
+      <input id="btn" type="button" onclick="conversorCelsiusFahrenheit()" value="CONVERTER" >
       <div id="result"></div>
     </form>
   </div>
